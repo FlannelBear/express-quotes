@@ -32,6 +32,9 @@ function addQuote(){
 
     let quoteObject = {text: `${text}`, author: `${author}`};
 
+    $('#quoteText').val('');
+    $('#quoteAuthor').val('');
+
     $.ajax({
         method: 'POST',
         url: '/quotes',

@@ -37,6 +37,6 @@ app.get( '/quotes', (req, res) => {
 
 app.post('/quotes', (req, res) => {
     console.log('post hit for /quotes route');
-    quotes.push(quoteObject);
+    quotes.push(req.body);
     res.send(quotes);
 });
