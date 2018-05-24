@@ -30,7 +30,7 @@ function addQuote(){
     let text = $('#quoteText').val();
     let author = $('#quoteAuthor').val();
 
-    let quoteObject = {text: `${text}`, author: `${author}`};
+    let quoteObject = {text: `"${text}"`, author: `${author}`};
 
     $('#quoteText').val('');
     $('#quoteAuthor').val('');
